@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <style>
+      * {
+         box-sizing: border-box;
+      }
+
+      body {
+         margin: 0;
+         /*      background-color: red;*/
+      }
+
+      main {
+         width: auto;
+         background-image: url("face.jpg");
+         /*      background-color: rgb(230, 227, 63);*/
+         background-repeat: no-repeat;
+         /*   background-attachment: fixed;*/
+         background-position: right bottom;
+         background-position-x: 95%;
+         background-size: contain;
+         color: rgb(148, 144, 144);
+         border-bottom: 1px solid rgb(204, 198, 198);
+         margin-left: 2%;
+         margin-right: 2%;
+      }
+
+      .header {
+         font-family: Verdana, Geneva, Tahoma, sans-serif;
+         color: black;
+         font-size: 48px;
+         width: 100%;
+
+         /*     background-color: aquamarine;*/
+      }
+
+      .col {
+         display: block;
+         font-family: Verdana, Geneva, Tahoma, sans-serif;
+         float: left;
+         width: 50%;
+         /*       background-color: bisque;*/
+      }
+
+      #col1 {
+
+         font-size: 20px;
+      }
+
+      .contact {
+         width: 50%;
+         float: left;
+         color: blue;
+         /*      background-color: rgb(184, 113, 28);*/
+         margin-bottom: 10%;
+      }
+
+      footer img {
+         display: block;
+         float: left;
+         width: 13.5%;
+         height: auto;
+         /*     background-color: rgb(184, 113, 28);*/
+         padding: 2px;
+         border: 1px solid rgb(204, 198, 198);
+         text-align: center;
+         margin-right: 3%;
+         margin-top: 2%;
+         border-radius: 5px;
+      }
+
+      footer img:first-child {
+         margin-left: 2%;
+      }
+
+      footer img:last-child {
+         margin-right: 2%;
+      }
+
+      .clear::after {
+         clear: both;
+         content: "";
+         display: table;
+      }
+   </style>
+</head>
+
+<body>
+   <main class="clear">
+      <div class="header">
+         about me
+      </div>
+      <div class="col">
+         <div id="col1">
+            <p>I'm a UI Designer and Frond End Developer from Sydney, Australia.</p>
+         </div>
+         <div id="col2">
+            <p> I enjoy taking complex problems and turnning them into simple and beutiful interface designs.
+               I also love the logic and structure of the coding and always strive to write elegant and efficient code,
+               whether
+               it be HTML, CSS or JQuery.
+            </p>
+         </div>
+         <div id="col3">
+            <p>When I'm not coding or pushing pixels, you'l find me in the gym or on the court shiiting some hoops.
+            </p>
+         </div>
+         <div id="col4">
+            <div class="contact">Facebook</div>
+            <div class="contact">Twiter</div>
+         </div>
+      </div>
+   </main>
+   <footer>
+      <div>
+         <img src="img1.jpg" alt="img1">
+         <img src="img2.jpg" alt="img2">
+         <img src="img3.jpg" alt="img3">
+         <img src="img4.jpg" alt="img4">
+         <img src="img5.jpg" alt="img5">
+         <img src="img6.jpg" alt="img6">
+      </div>
+   </footer>
+
+</body>
+
+</html>
